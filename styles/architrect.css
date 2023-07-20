@@ -1,0 +1,132 @@
+/* work sans font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared styles */
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.text-light-gray{
+    color:#727272
+
+}
+/*header styles*/
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    
+}
+.nav-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul {
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+.banner-content{
+    max-width:800px;
+    text-align: center;
+    margin: 0 auto ;
+    
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.btn-primary{
+    border-radius:8px ;
+    background-color:#FF900E ;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    color: #FFF;
+    border: 0px;
+    cursor: pointer;
+    
+}
+.banner img {
+    margin: 20px;
+    width: 100%;
+
+}
+main{
+    max-width:140px;
+    margin: 70px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+
+}
+.teams-title{
+    font-size:2.8rem ;
+}
+.teams-title .quick-title{
+    font-weight: 500;
+
+
+}
+.teams-title .feature{
+    color: #FF900E;
+    font-family: 700;
+}
+
+
+
+
+
+
+
+/*responsive styles*/
+@media screen and (max-width:576px) {
+    header{padding: 2opx;}
+    
+    nav, .teams-container {flex-direction: column;}
+    
+}
+.teams-img-container{
+    grid-template-columns: repeat(1,1fr);
+}
+
+/*tablet*/
+@media screen and (min-width:576px) and (max-width:992px){
+     heading{padding: 50px;}
+    
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+
+
